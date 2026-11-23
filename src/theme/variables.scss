@@ -1,2 +1,41 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+// src/theme/variables.scss
+
+:root {
+    /** 
+   * Primary: Electric Violet 
+   */
+    --ion-color-primary: #8A2BE2;
+    --ion-color-primary-rgb: 138, 43, 226;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #7926c7;
+    --ion-color-primary-tint: #9640e5;
+
+    /** 
+   * Default Theme (Dark Navy)
+   * This is applied by default, and whenever the 'ion-palette-dark' class is on the body.
+   */
+    --ion-background-color: #0d1117;
+    --ion-background-color-rgb: 13, 17, 23;
+    --ion-text-color: #e6edf3;
+    --ion-text-color-rgb: 230, 237, 243;
+
+    --ion-toolbar-background: #161b22;
+    --ion-tab-bar-background: #161b22;
+    --ion-card-background: #161b22;
+}
+
+/**
+ * Light Theme Overrides
+ * This applies ONLY when the 'ion-palette-dark' class is REMOVED from the body (by our SettingsService).
+ */
+body:not(.ion-palette-dark) {
+    --ion-background-color: #f4f5f8;
+    --ion-background-color-rgb: 244, 245, 248;
+    --ion-text-color: #1c1c1e;
+    --ion-text-color-rgb: 28, 28, 30;
+
+    --ion-card-background: #ffffff;
+    --ion-toolbar-background: #ffffff;
+    --ion-tab-bar-background: #ffffff;
+}

@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'com.mudx.taskflow', // Use a reverse-domain format. e.g., com.yourlastname.taskflow
   appName: 'TaskFlow',
   webDir: 'www'
 };

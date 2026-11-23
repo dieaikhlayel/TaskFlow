@@ -1,0 +1,62 @@
+.stat-card {
+    margin: 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    ion-card-content {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        font-size: 24px;
+    }
+
+    .data-wrapper {
+        .value {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--ion-text-color);
+            /* Ensures the number is visible */
+        }
+
+        .label {
+            margin: 0;
+            font-size: 0.85rem;
+            color: var(--ion-color-medium);
+            /* Uses Ionic's standard gray */
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    /* Color variations */
+    &.primary .icon-wrapper {
+        background: rgba(138, 43, 226, 0.15);
+        color: #8A2BE2;
+    }
+
+    &.success .icon-wrapper {
+        background: rgba(46, 160, 67, 0.15);
+        color: #3fb950;
+    }
+
+    &.warning .icon-wrapper {
+        background: rgba(210, 153, 34, 0.15);
+        color: #d29922;
+    }
+
+    &.danger .icon-wrapper {
+        background: rgba(248, 81, 73, 0.15);
+        color: #f85149;
+    }
+}
