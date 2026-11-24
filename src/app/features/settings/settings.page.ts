@@ -1,7 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonContent, IonList, IonItem, IonLabel, IonToggle, IonButton, IonIcon, IonNote, AlertController } from '@ionic/angular';
+import { IonContent, IonList, IonItem, IonLabel, IonToggle, IonIcon, IonNote, AlertController } from '@ionic/angular';
 import { addIcons } from 'ionicons';
 import { moonOutline, sunnyOutline, trashOutline, informationCircleOutline } from 'ionicons/icons';
 import { SettingsService } from '../../core/settings.service';
@@ -14,8 +12,8 @@ import { PageHeaderComponent } from '../../shared/components/page-header/page-he
   styleUrls: ['./settings.page.scss'],
   standalone: true,
   imports: [
-    CommonModule, FormsModule, IonContent, IonList, IonItem, IonLabel, IonToggle,
-    IonButton, IonIcon, IonNote, PageHeaderComponent
+    IonContent, IonList, IonItem, IonLabel, IonToggle, IonIcon, IonNote,
+    PageHeaderComponent
   ]
 })
 export class SettingsPage {

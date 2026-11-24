@@ -1,16 +1,14 @@
 import { Component, inject, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import {
   IonContent, IonFab, IonFabButton, IonIcon, IonList, IonItem, IonLabel,
   IonCheckbox, IonSearchbar, IonSegment, IonSegmentButton, IonSelect,
   IonSelectOption, IonItemSliding, IonItemOptions, IonItemOption, IonBadge
 } from '@ionic/angular';
 import { addIcons } from 'ionicons';
-import { add, trash, flag } from 'ionicons/icons';
+import { add, trash } from 'ionicons/icons';
 import { TaskService } from '../../core/task.service';
-import { Task } from '../../models/task.model';
 
 @Component({
   selector: 'app-tasks',
@@ -18,7 +16,7 @@ import { Task } from '../../models/task.model';
   styleUrls: ['./tasks.page.scss'],
   standalone: true,
   imports: [
-    CommonModule, RouterLink, FormsModule, IonContent, IonFab, IonFabButton,
+    CommonModule, RouterLink, IonContent, IonFab, IonFabButton,
     IonIcon, IonList, IonItem, IonLabel, IonCheckbox, IonSearchbar, IonSegment,
     IonSegmentButton, IonSelect, IonSelectOption, IonItemSliding, IonItemOptions,
     IonItemOption, IonBadge
@@ -65,7 +63,7 @@ export class TasksPage {
   });
 
   constructor() {
-    addIcons({ add, trash, flag });
+    addIcons({ add, trash });
   }
 
   toggleTask(id: string) {

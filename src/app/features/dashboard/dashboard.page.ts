@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { IonContent, IonProgressBar, IonList, IonItem, IonLabel, IonNote } from '@ionic/angular';
 import { PageHeaderComponent } from '../../shared/components/page-header/page-header.component';
 import { StatCardComponent } from '../../shared/components/stat-card/stat-card.component';
@@ -11,7 +10,6 @@ import { TaskService } from '../../core/task.service';
   styleUrls: ['./dashboard.page.scss'],
   standalone: true,
   imports: [
-    CommonModule,
     IonContent,
     IonProgressBar,
     IonList,
