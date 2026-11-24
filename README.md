@@ -101,6 +101,3 @@ src/
 - Local storage is abstracted behind the `TaskService` using Capacitor's native Preferences API, making it ready to be swapped for a REST API in the future.
 
 ---
-
-*Built as a professional portfolio project for Web & Mobile Application Development.*
-'@ | Set-Content -Path README.md -Encoding utf8; New-Item -ItemType Directory -Force -Path screenshots | Out-Null; git add README.md screenshots; git commit -m "docs: add professional TaskFlow README"; git branch -M main; if (git remote get-url origin 2>$null) { git remote set-url origin "https://github.com/YOUR_GITHUB_USERNAME/TaskFlow.git" } else { git remote add origin "https://github.com/YOUR_GITHUB_USERNAME/TaskFlow.git" }; git push -u origin main
