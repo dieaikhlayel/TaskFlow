@@ -89,7 +89,7 @@ src/
 
 ## 📸 Screenshots
 
-| Dashboard (Dark) | Tasks List (Light) | Create Task |
+| Dashboard | Tasks List (Light) | Create Task |
 |:---:|:---:|:---:|
 | ![Dashboard](screenshots/dashboard.png) | ![Tasks](screenshots/tasks.png) | ![Create Task](screenshots/create-task.png) |
 
